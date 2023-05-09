@@ -1,17 +1,23 @@
-let can = document.getElementById ('canvas')
-let retangulo = can.getContext ('2d')
-let circulo = can.getContext ('2d')
-let linha = can.getContext ('2d')
+let can = document.getElementById ('canvas');
+let objeto = can.getContext ('2d');
 
-retangulo.fillStyle = 'purple'
-retangulo.fillRect (10, 10, 100, 30)
+objeto.fillStyle = 'white';
+objeto.fillRect (10, 10, 100, 30);
 
-circulo.beginPath()
-circulo.arc(150, 100, 50, 0, Math.PI * 2)
-circulo.lineWidth = 7
-circulo.strokeStyle = 'yellow'
+objeto.beginPath();
+objeto.arc(60, 25, 10, 0, Math.PI * 2);
+objeto.fillStyle = 'red';
+objeto.fill();
 
-linha.beignPath();
-linha.moveTo(20, 200);
-linha.lineTo(25,250);
-linha.fillStyle = 'black'
+objeto.beginPath();
+objeto.moveTo(15,15);
+objeto.lineTo(10,10);
+objeto.lineTo(125,105);
+objeto.fill();
+
+objeto.beginPath();
+objeto.moveTo(100,35);
+objeto.quadraticCurveTo(35,35,35,103);
+objeto.fillStyle = 'yellow';
+objeto.stroke();
+objeto.fill();
