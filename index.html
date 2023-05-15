@@ -1,15 +1,67 @@
 <!DOCTYPE html>
+<!--Mudando a linguagem da página para Português-->
 <html lang="PT-br">
 <head>
     <meta charset="UTF-8">
+    <!--Deixando a página compátivel com outros sistemas operacionais-->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--Ajustando a página ao tamanho de tela-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Titulo da página-->
     <title>Atividade Canvas</title>
+    <!--Licando a página com o arquivo CSS-->
     <link rel="stylesheet" type="text/CSS" href="CSS/style.css">
 </head>
 <body>
+    <!--Titulo da página-->
+    <h1><strong>CANVAS</strong></h1>
+    <!--Tag div para a melhor organização do conteúdo-->
+    <div>
+        <!--Tag div para o conteúdo relacionado ao retângulo-->
+        <div id="retangulo">
+            <!--Titulo da forma-->
+            <h2><strong>Retângulo</strong></h2>
+            <!--Tag "p" para explicar o código usado para a criação da forma-->
+            <p>e.fillStyle = 'white'<br>e.fillRect (150,100,300,150)</p>
+        </div>
+        <!--Tag div para o conteúdo relacionado ao circulo-->
+        <div id="circulo">
+            <!--Titulo da forma-->
+            <h2><strong>Circulo</strong></h2>
+            <!--Tag "p" para explicar o código usado para a criação da forma-->
+            <p>c.beginPath()<br>c.arc(500,350, 130, 0, Math.PI*2)<br>c.fillStyle = 'white'<br>c.fill()</p>
+        </div>
+        <!--Tag div para o conteúdo relacionado a linha-->
+        <div id="linha">
+            <!--Titulo da forma-->
+            <h2><strong>Linha</strong></h2>
+            <!--Tag "p" para explicar o código usado para a criação da forma-->
+            <p>e.beginPath()<br>e.moveTo (200,700)<br>e.lineTo(400,800)<br>e.lineTo(400,700)<br>e.lineTo(200,800)<br>e.lineTo(200,700)<br>e.strokeStyle = 'white'<br>e.lineWidth = 5<br>e.stroke()</p>
+        </div>
+        <!--Tag div para o conteúdo relacionado a curva-->
+        <div id="curva">
+            <!--Titulo da forma-->
+            <h2><strong>Curva</strong></h2>
+            <!--Tag "p" para explicar o código usado para a criação da forma-->
+            <p>e.beginPath()<br>e.arc(720,1020,90,0,Math.PI)<br>e.lineWidth = 10<br>e.stroke()</p>
+        </div>
+        <!--Tag div para o conteúdo relacionado a imagem-->
+        <div id="imagem">
+            <!--Titulo da forma-->
+            <h2><strong>Imagem</strong></h2>
+            <!--Tag "p" para explicar o código usado para a criação da forma-->
+            <p>let imagem = new Image()<br>imagem.src = 'IMG/Gandalf.jpg'<br>imagem.addEventListener('load',()=>{<br>e.drawImage(imagem,50,1250)<br>})</p>
+        </div>
+
+        <!--Criação de um quadro em branco com a tag "canvas"-->
+        <canvas id="ex" width="1000px" height="1600px"></canvas>
+    </div>
+    <!--Titulo para a exemplificação do que é possível fazer com essa tag-->
+    <h2 id="demonstracao"><strong>Exemplo de como podemos usar</strong></h2>
+    <!--Demonstração-->
     <canvas id="canvas" width="1000px" height="500px"></canvas>
 
+    <!--Lincando o arquivo Javascript com este "html"-->
     <script src="JS/script.js"></script>
 </body>
 </html>

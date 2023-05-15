@@ -1,15 +1,77 @@
+/*Configurações para a página toda*/
 *{
     margin: 0;
     padding: 0;
 }
-
+/*Estilização da página*/
 body{
     background-color: black;
     text-align: center;
+    color:antiquewhite
 }
-
-canvas{
+/*Estilização do cnava das formas*/
+#canvas{
     background-color:#290e61;
-    margin-top: 5%;
+    margin-top: 10px;
     border-radius: 14px;
+    margin-bottom: 100px;
+}
+/*Titulo da página*/
+h1{
+    margin: 60px;
+    font: normal 40pt Verdana;
+    color: white;
+}
+/*Parágrafos de códigos da página*/
+p{
+    font: normal 13pt Arial;
+    color:antiquewhite;
+}
+/*Sub titulos*/
+h2{
+    font: normal 20pt Verdana;
+    margin-bottom: 15px;
+}
+/*Configuração da tag div usada para organizar os elementos da página*/
+div{
+    position: relative;
+}
+/*Conteúdo Retângulo*/
+#retangulo{
+    position: absolute;
+    text-align: justify;
+    left: 830px;
+    top:130px;
+}
+/*Conteúdo Circulo*/
+#circulo{
+    position: absolute;
+    text-align: justify;
+    left: 380px;
+    top:400px;
+}
+/*Conteúdo Linha*/
+#linha{
+    position: absolute;
+    text-align: justify;
+    left: 830px;
+    top:670px;
+}
+/*Conteúdo Linha*/
+#curva{
+    position: absolute;
+    text-align: justify;
+    left: 380px;
+    top:1000px;
+}
+/*Conteúdo Imagem*/
+#imagem{
+    position: absolute;
+    text-align: justify;
+    left: 830px;
+    top:1300px;
+}
+/*Estilização do titulo usado na exemplicação "lobo"*/
+#demonstracao{
+    margin-bottom: 40px;
 }

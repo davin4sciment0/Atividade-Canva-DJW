@@ -1,7 +1,44 @@
 let can = document.getElementById ('canvas')
 let c = can.getContext ('2d')
 
-//criculo
+let ex = document.querySelector ('#ex')
+let e = ex.getContext ('2d')
+
+//Retângulo exemplo
+e.fillStyle = 'white'
+e.fillRect (150,100,300,150)
+
+//Circulo exemplo
+e.beginPath()
+e.arc(720,470,90,0,Math.PI*2)
+e.fillStyle = 'white'
+e.fill()
+
+//Linha exemplo
+e.beginPath()
+e.moveTo (200,700)
+e.lineTo(400,800)
+e.lineTo(400,700)
+e.lineTo(200,800)
+e.lineTo(200,700)
+e.strokeStyle = 'white'
+e.lineWidth = 5
+e.stroke()
+
+//Curva exemplo
+e.beginPath()
+e.arc(720,1020,90,0,Math.PI)
+e.lineWidth = 10
+e.stroke()
+
+//Imagem exemplo
+let imagem = new Image()
+imagem.src = 'IMG/Gandalf.jpg'
+imagem.addEventListener('load',()=>{
+    e.drawImage(imagem,50,1250)
+})
+
+//Criculos para demonstração "estrelas e lua"
 c.beginPath()
 c.arc(500,350, 130, 0, Math.PI*2)
 c.fillStyle = 'white'
@@ -92,7 +129,7 @@ c.arc(580, 380, 40, 0, Math.PI*2)
 c.fillStyle = '#e9f2c4'
 c.fill()
 
-//linha
+//Linha para demonstração "montanhas"
 c.beginPath()
 c.moveTo (0,0)
 c.lineTo(140,80)
@@ -143,7 +180,7 @@ c.lineTo(930, 400)
 c.fillStyle = '#4e4a69'
 c.fill()
 
-//retâmgulo
+//Retâmgulo demonstração "chão"
 c.fillStyle  = '#5873b5'
 c.fillRect(0,400,1000,100)
 
@@ -163,7 +200,7 @@ c.arc(746, 360, 60, 0, Math.PI*2)
 c.fillStyle = '#283359'
 c.fill()
 
-//Imagem
+//Imagem "cabeça do lobo"
 let img = new Image()
 img.src = 'IMG/lobo.png'
 img.addEventListener('load',()=>{
