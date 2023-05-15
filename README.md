@@ -8,7 +8,7 @@
 - Imagem
 
 ## Retângulo :white_square_button:
-Para fazer o Retângulo, uasmos o código de fillRect depois decidimos o seu valor de X, Y sua largura e altura, após isso foi usado o código fillstyle para dar cor ao objeto.
+Para fazer o Retângulo, usamos o código de fillRect depois decidimos o seu valor de X, Y sua largura e altura, após isso foi usado o código fillstyle para dar cor ao objeto.
 
 ## Círculo :large_blue_circle:
 Para fazer o Círculo, usamos alguns código sendo eles beignPath que irá criar uma nova Path para futuros comandos de desenho, após isso foi utilizado o .arc para fazer o arco do círculo depois decidimos seus valores de X, Y, o seu ângulo, e o valor do PI para o seu raio.
