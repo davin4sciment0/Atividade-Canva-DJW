@@ -21,3 +21,6 @@ A curva diferente da linha, não foi usado o lineTo ou o moveTo, foi usado o mes
 
 ## Imagem :camera:
 Para a imagem, primeiro foi definido um let image = new image(), depois ocorre a chamada da foto para o canvas, foi adicionado um Listener para fazer load da foto no site e por último um .drawImage para renderizar a imagem no site, com os dois valores atríbuidos nos parênteses do drawImagem.
+
+## Exemplo de como podemos usar a tag "canva"
+<image src="IMG/Lua.jpg"></image>
