@@ -35,10 +35,11 @@ h2{
 /*Configuração da tag div usada para organizar os elementos da página*/
 div{
     position: relative;
+    width: 300px;
 }
 /*Conteúdo Retângulo*/
 #retangulo{
-    position: absolute;
+    position:absolute;
     text-align: justify;
     left: 830px;
     top:130px;
@@ -74,4 +75,10 @@ div{
 /*Estilização do titulo usado na exemplicação "lobo"*/
 #demonstracao{
     margin-bottom: 40px;
+}
+
+#ex{
+    display: block;
+    position: relative;
+    left: 70%;
 }
